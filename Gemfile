@@ -23,6 +23,8 @@ gem 'coffee-rails', '~> 4.0.0'
 gem 'faker'
 
 
+
+
 gem 'foundation-rails'
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
@@ -42,6 +44,10 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+group :production do 
+  gem 'rails_12factor'
+  gem 'pg'
+end
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 
