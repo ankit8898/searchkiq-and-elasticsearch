@@ -7,5 +7,5 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 User.delete_all
-6000.times {User.create!(name: Faker::Name.name, age: Faker::Number.number(2))}
+50000.times {User.create!(name: Faker::Name.name, age: Faker::Number.number(2))}
 User.reindex
